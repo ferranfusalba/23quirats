@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1>Index Root</h1>
+    <h1>Index FDS</h1>
     <NuxtLink to="/about">
-      About Root
+      About FDS
     </NuxtLink>
     <br>
-    <a href="https://fds.23quirats.com/">FDS</a>
+    <a href="https://23quirats.com/">Root</a>
   </div>
 </template>
 
@@ -13,6 +13,6 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'RootIndex'
+  name: 'FdsIndex'
 })
 </script>

@@ -29,9 +29,24 @@ export default {
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
-
+  /*
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build'
+  ],
+*/
+  buildModules: [
+    '@nuxt/typescript-build',
+    ['k-domains', {
+      subDomains: ['fds'], // List of directories to hold te pages for your subdomains
+      rootDomain: 'root-domain' //  directory to hold the pages for root domain
+    }
+    ],
+    ['@nuxtjs/router', {
+      keepDefaultRouter: true // this line is mandatory...
+    }
+    ]
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
